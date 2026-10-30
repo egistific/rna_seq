@@ -1,0 +1,12 @@
+name: rnaseq-deseq2
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.3
+  - bioconductor-deseq2=1.42.0
+  - bioconductor-tximport=1.30.0
+  - r-optparse=1.7.5
+  - r-ggplot2
+  - bioconductor-clusterprofiler
+  - bioconductor-org.hs.eg.db

@@ -1,0 +1,10 @@
+data/reads/
+data/ref/
+results/
+logs/
+docs/
+workflow/scripts/run_ora.R
+.snakemake
+
+# misc
+__pyache__/

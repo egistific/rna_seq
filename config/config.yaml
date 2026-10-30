@@ -1,0 +1,27 @@
+data:
+  reads_dir: data/reads
+  metadata: data/metadata.tsv
+  samples: data/samples.tsv
+  ref:
+    raw: data/ref/gencode.v44.transcripts.fa.gz
+    transcriptome: data/ref/transcriptome.fa.gz
+    tx2gene: data/ref/tx2gene.tsv
+
+study_design:
+  condition_col: condition
+  reference_level: untreated
+  formula: "~donor + condition"
+
+params:
+  kmer: 31
+  threads:
+    fastp: 2
+    salmon: 2
+  salmon_libtype: A
+  fdr_threshold: 0.05
+  min_count: 10
+  lfc_threshold: 1
+  known_de_genes:
+    - CRISPLD2
+
+outdir: results

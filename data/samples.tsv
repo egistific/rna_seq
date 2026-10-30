@@ -1,0 +1,9 @@
+sample_id	donor	condition	fq1	fq2
+N61311_untreated	N61311	untreated	data/reads/SRR1039508_1.fastq.gz	data/reads/SRR1039508_2.fastq.gz
+N61311_Dex	N61311	Dex	data/reads/SRR1039509_1.fastq.gz	data/reads/SRR1039509_2.fastq.gz
+N052611_untreated	N052611	untreated	data/reads/SRR1039512_1.fastq.gz	data/reads/SRR1039512_2.fastq.gz
+N052611_Dex	N052611	Dex	data/reads/SRR1039513_1.fastq.gz	data/reads/SRR1039513_2.fastq.gz
+N080611_untreated	N080611	untreated	data/reads/SRR1039516_1.fastq.gz	data/reads/SRR1039516_2.fastq.gz
+N080611_Dex	N080611	Dex	data/reads/SRR1039517_1.fastq.gz	data/reads/SRR1039517_2.fastq.gz
+N061011_untreated	N061011	untreated	data/reads/SRR1039520_1.fastq.gz	data/reads/SRR1039520_2.fastq.gz
+N061011_Dex	N061011	Dex	data/reads/SRR1039521_1.fastq.gz	data/reads/SRR1039521_2.fastq.gz

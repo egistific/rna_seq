@@ -1,0 +1,10 @@
+name: rnaseq
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - snakemake-minimal=8.4.12
+  - pandas=2.2.3
+  - pyyaml=6.0.3
+  - conda>=24.7.1

@@ -1,0 +1,23 @@
+import pandas as pd
+
+configfile: "config/config.yaml"
+
+samples_df = pd.read_csv(config["data"]["samples"], sep="\t", dtype=str).set_index("sample_id", drop=False)
+SAMPLES = list(samples_df.index)
+OUTDIR = config["outdir"]
+
+def fastqs(wildcards):
+    row = samples_df.loc[wildcards.sample]
+    return {"r1": row["fq1"], "r2": row["fq2"]}
+
+
+include: "rules/ref.smk"
+include: "rules/qc.smk"
+include: "rules/quant.smk"
+include: "rules/deseq2.smk"
+
+
+rule all:
+    input:
+        rules.multiqc.output,
+        rules.deseq2.output
